@@ -3,6 +3,7 @@ mod di_string_match;
 mod house_robber;
 mod is_alien_sorted;
 mod jump_game_ii;
+mod l_15;
 mod l_668;
 mod length_of_longest_substring;
 mod number_of_recent_calls;
@@ -31,7 +32,11 @@ fn main() {
     //     Solution::is_alien_sorted(vec![s("apple"), s("app")], s("abcdefghijklmnopqrstuvwxyz"))
     // )
 
-    println!("{:?}", Solution::find_kth_number(3, 3, 5))
+    // println!("{:?}", Solution::find_kth_number(3, 3, 5))
+    println!(
+        "{:?}",
+        Solution::three_sum(vec![-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4])
+    );
 }
 
 fn s(s: &str) -> String {

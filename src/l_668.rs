@@ -10,7 +10,7 @@ impl Solution {
             for i in (ans / n + 1)..=m {
                 cnt += ans / i;
             }
-            println!("mid {} cnt {}", ans,cnt);
+            println!("mid {} cnt {}", ans, cnt);
             if cnt < k {
                 l = ans + 1;
             } else {
