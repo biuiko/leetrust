@@ -4,6 +4,7 @@ mod house_robber;
 mod is_alien_sorted;
 mod jump_game_ii;
 mod l_15;
+mod l_462;
 mod l_668;
 mod length_of_longest_substring;
 mod number_of_recent_calls;
@@ -33,10 +34,11 @@ fn main() {
     // )
 
     // println!("{:?}", Solution::find_kth_number(3, 3, 5))
-    println!(
-        "{:?}",
-        Solution::three_sum(vec![-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4])
-    );
+    // println!(
+    //     "{:?}",
+    //     Solution::three_sum(vec![-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4])
+    // );
+    println!("{:?}", Solution::min_moves2(vec![1, 10, 2, 9]))
 }
 
 fn s(s: &str) -> String {
