@@ -3,16 +3,17 @@ mod di_string_match;
 mod house_robber;
 mod is_alien_sorted;
 mod jump_game_ii;
+mod l_128;
 mod l_15;
 mod l_436;
 mod l_462;
 mod l_668;
+mod l_961;
 mod length_of_longest_substring;
 mod number_of_recent_calls;
 mod one_away_lcci;
 mod record_data_in_log_files;
 mod two_sum;
-mod l_961;
 pub struct Solution;
 fn main() {
     // println!("{:?}", two_sum::two_sum(vec![3,3], 6));
@@ -41,7 +42,11 @@ fn main() {
     //     Solution::three_sum(vec![-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4])
     // );
     // println!("{:?}", Solution::min_moves2(vec![1, 10, 2, 9]))
-    println!("{:?}", Solution::find_right_interval(vec![vec![1,4], vec![2,3], vec![3,4]]));
+    // println!(
+    //     "{:?}",
+    //     Solution::find_right_interval(vec![vec![1, 4], vec![2, 3], vec![3, 4]])
+    // );
+    println!("{:?}", Solution::longest_consecutive(vec![100,55,200,11,31,2]))
 }
 
 fn s(s: &str) -> String {
