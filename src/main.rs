@@ -4,6 +4,7 @@ mod house_robber;
 mod is_alien_sorted;
 mod jump_game_ii;
 mod l_15;
+mod l_436;
 mod l_462;
 mod l_668;
 mod length_of_longest_substring;
@@ -38,7 +39,8 @@ fn main() {
     //     "{:?}",
     //     Solution::three_sum(vec![-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4])
     // );
-    println!("{:?}", Solution::min_moves2(vec![1, 10, 2, 9]))
+    // println!("{:?}", Solution::min_moves2(vec![1, 10, 2, 9]))
+    println!("{:?}", Solution::find_right_interval(vec![vec![1,4], vec![2,3], vec![3,4]]));
 }
 
 fn s(s: &str) -> String {
