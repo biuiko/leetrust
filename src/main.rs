@@ -12,6 +12,7 @@ mod number_of_recent_calls;
 mod one_away_lcci;
 mod record_data_in_log_files;
 mod two_sum;
+mod l_961;
 pub struct Solution;
 fn main() {
     // println!("{:?}", two_sum::two_sum(vec![3,3], 6));
