@@ -3,8 +3,10 @@ mod di_string_match;
 mod house_robber;
 mod is_alien_sorted;
 mod jump_game_ii;
+mod l_11;
 mod l_128;
 mod l_15;
+mod l_4;
 mod l_436;
 mod l_462;
 mod l_668;
@@ -46,7 +48,16 @@ fn main() {
     //     "{:?}",
     //     Solution::find_right_interval(vec![vec![1, 4], vec![2, 3], vec![3, 4]])
     // );
-    println!("{:?}", Solution::longest_consecutive(vec![100,55,200,11,31,2]))
+    // println!(
+    //     "{:?}",
+    //     Solution::longest_consecutive(vec![100, 55, 200, 11, 31, 2])
+    // )
+
+    // println!("{:?}", Solution::max_area(vec![1, 1]));
+    println!(
+        "{:?}",
+        Solution::find_median_sorted_arrays(vec![1, 3], vec![2, 2, 4])
+    );
 }
 
 fn s(s: &str) -> String {

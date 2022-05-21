@@ -3,17 +3,13 @@ use std::collections::{HashMap, HashSet};
 use std::iter::FromIterator;
 impl Solution {
     pub fn longest_consecutive(nums: Vec<i32>) -> i32 {
-        let sets:HashSet<i32> = HashSet::from_iter(nums.clone());
+        let sets: HashSet<i32> = HashSet::from_iter(nums.clone());
 
         let mut mp = nums.iter().map(|num| (*num, 0)).collect::<HashMap<_, _>>();
         let mut ans = 0;
         for k in sets.into_iter() {
             let v = *mp.get(&k).unwrap();
-            let len = if v == 0 {
-                find_x(k, &mut mp)
-            } else {
-                v
-            };
+            let len = if v == 0 { find_x(k, &mut mp) } else { v };
             ans = ans.max(len);
         }
         ans
@@ -21,7 +17,7 @@ impl Solution {
 }
 
 fn find_x(num: i32, mp: &mut HashMap<i32, i32>) -> i32 {
-    let v = mp.get(&num).map(|x|*x);
+    let v = mp.get(&num).map(|x| *x);
     match v {
         None => {
             return 0;
