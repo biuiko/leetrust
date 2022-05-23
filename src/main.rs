@@ -10,6 +10,7 @@ mod l_4;
 mod l_436;
 mod l_462;
 mod l_5;
+mod l_6;
 mod l_668;
 mod l_961;
 mod length_of_longest_substring;
@@ -59,7 +60,8 @@ fn main() {
     //     "{:?}",
     //     Solution::find_median_sorted_arrays(vec![1, 3], vec![2, 2, 4])
     // );
-    println!("{:?}", Solution::longest_palindrome(s("bb")));
+    // println!("{:?}", Solution::longest_palindrome(s("bb")));
+    println!("{:?}", Solution::convert(s("PAYPALISHIRING"), 4))
 }
 
 fn s(s: &str) -> String {
