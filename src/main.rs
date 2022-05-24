@@ -18,6 +18,7 @@ mod length_of_longest_substring;
 mod number_of_recent_calls;
 mod one_away_lcci;
 mod record_data_in_log_files;
+mod reverse;
 mod two_sum;
 pub struct Solution;
 fn main() {
@@ -62,7 +63,8 @@ fn main() {
     //     Solution::find_median_sorted_arrays(vec![1, 3], vec![2, 2, 4])
     // );
     // println!("{:?}", Solution::longest_palindrome(s("bb")));
-    println!("{:?}", Solution::convert(s("PAYPALISHIRING"), 4))
+    // println!("{:?}", Solution::convert(s("PAYPALISHIRING"), 4))
+    println!("{:?}", Solution::reverse(i32::MAX));
 }
 
 fn s(s: &str) -> String {
