@@ -2,7 +2,7 @@ use crate::Solution;
 impl Solution {
     pub fn convert(s: String, num_rows: i32) -> String {
         let s_len = s.len() as i32;
-        if s_len <= num_rows  || num_rows == 1{
+        if s_len <= num_rows || num_rows == 1 {
             return s;
         }
         let chars = s.chars().collect::<Vec<_>>();
