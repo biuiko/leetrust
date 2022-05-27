@@ -1,5 +1,6 @@
 mod add_two_nums;
 mod di_string_match;
+mod find_closest;
 mod house_robber;
 mod is_alien_sorted;
 mod jump_game_ii;
@@ -64,7 +65,26 @@ fn main() {
     // );
     // println!("{:?}", Solution::longest_palindrome(s("bb")));
     // println!("{:?}", Solution::convert(s("PAYPALISHIRING"), 4))
-    println!("{:?}", Solution::reverse(i32::MAX));
+    // println!("{:?}", Solution::reverse(i32::MAX));
+    println!(
+        "{:?}",
+        Solution::find_closest(
+            vec![
+                s("I"),
+                s("am"),
+                s("a"),
+                s("student"),
+                s("from"),
+                s("a"),
+                s("university"),
+                s("in"),
+                s("a"),
+                s("city")
+            ],
+            s("a"),
+            s("student")
+        )
+    )
 }
 
 fn s(s: &str) -> String {
