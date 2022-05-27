@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 mod add_two_nums;
 mod di_string_match;
 mod find_closest;

@@ -1,7 +1,7 @@
 use crate::Solution;
 use std::cmp::max;
 impl Solution {
-    pub fn jump(mut nums: Vec<i32>) -> i32 {
+    pub fn jump(nums: Vec<i32>) -> i32 {
         let mut ans = 0;
         let mut max_position = 0;
         let mut end = 0;
