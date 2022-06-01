@@ -12,6 +12,7 @@ mod l_15;
 mod l_4;
 mod l_436;
 mod l_462;
+mod l_473;
 mod l_5;
 mod l_6;
 mod l_668;
@@ -87,7 +88,8 @@ fn main() {
     //         s("student")
     //     )
     // )
-    println!("{:?}", Solution::remove_outer_parentheses(s("(()())(())")));
+    // println!("{:?}", Solution::remove_outer_parentheses(s("(()())(())")));
+    println!("{:?}", Solution::makesquare(vec![4, 3, 2, 10, 5, 9, 2, 5]));
 }
 
 fn s(s: &str) -> String {
