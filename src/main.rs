@@ -16,6 +16,7 @@ mod l_473;
 mod l_5;
 mod l_6;
 mod l_668;
+mod l_929;
 mod l_961;
 mod l_965;
 mod length_of_longest_substring;
@@ -89,7 +90,8 @@ fn main() {
     //     )
     // )
     // println!("{:?}", Solution::remove_outer_parentheses(s("(()())(())")));
-    println!("{:?}", Solution::makesquare(vec![4, 3, 2, 10, 5, 9, 2, 5]));
+    // println!("{:?}", Solution::makesquare(vec![4, 3, 2, 10, 5, 9, 2, 5]));
+    println!("{:?}",Solution::num_unique_emails(vec![s("test.email+alex@leetcode.com"),s("test.e.mail+bob.cathy@leetcode.com"),s("testemail+david@lee.tcode.com")]));
 }
 
 fn s(s: &str) -> String {
